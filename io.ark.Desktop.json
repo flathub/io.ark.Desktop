@@ -2,9 +2,9 @@
   "app-id": "io.ark.Desktop",
   "branch": "stable",
   "base": "io.atom.electron.BaseApp",
-  "base-version": "18.08",
+  "base-version": "19.08",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "18.08",
+  "runtime-version": "19.08",
   "sdk": "org.freedesktop.Sdk",
   "command": "arkclient",
   "separate-locales": false,
@@ -15,25 +15,7 @@
     "--device=all"
   ],
   "modules": [
-    {
-      "name": "libusb",
-      "config-opts": [ "--disable-static", "--disable-udev" ],
-      "cleanup": [
-        "/lib/*.la",
-        "/lib/pkgconfig",
-        "/include"
-      ],
-      "sources": [
-        {
-          "type":"archive",
-          "url":"https://github.com/libusb/libusb/archive/v1.0.21.tar.gz",
-          "sha256": "1a5b08c05bc5e38c81c2d59c29954d5916646f4ff46f51381b3f624384e4ac01"
-        }
-      ],
-      "post-install": [
-        "install -Dm644 COPYING /app/share/licenses/libusb/COPYING"
-      ]
-    },
+    "shared-modules/libusb/libusb.json",
     {
       "name": "ark",
       "buildsystem": "simple",

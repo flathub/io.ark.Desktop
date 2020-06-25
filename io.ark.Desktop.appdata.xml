@@ -3,6 +3,7 @@
   <id>io.ark.Desktop.desktop</id>
   <name>ARK Desktop Wallet</name>
   <developer_name>ARK</developer_name>
+  <content_rating type="oars-1.1"/>
   <summary>Wallet for ARK</summary>
   <description>
     <p>The ARK Desktop Wallet is natively built for all major Operating Systems. Our full HD wallet meets the top security standards in the industry and supports the Ledger Nano S secure hardware wallet. ARK wallets connect to fully synced network peers removing the need to download the full blockchain. With the ARK wallet you are up and running as soon as it’s installed, no more syncing! And, with 8 second block times you can actually see your transactions occur in real time! No more checking in every 30 minutes to see if your transactions were confirmed.</p>
